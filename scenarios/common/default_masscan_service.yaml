@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  masscan:
+    build:
+      context: ../docker
+      dockerfile: ../docker/Dockerfile
+    image: masscan
+    container_name: masscan
+    restart: "no"
