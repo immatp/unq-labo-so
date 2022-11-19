@@ -4,6 +4,7 @@ services:
   masscan:
     environment:
       MASSCAN_ARGS: -p80,8080,443,4443,21,22,23,5432,3389,123,69,110,995,143,993,25,587,3306 --banners --rate 10000 10.11.1.1/24
+      GTW_ADDR: 10.11.1.1
     networks:
       - small_net
     depends_on:

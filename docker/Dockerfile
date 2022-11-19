@@ -10,4 +10,5 @@ RUN apt update && apt install -y libpcap-dev
 WORKDIR /opt/app
 COPY --from=appbuild /opt/app/masscan/bin/masscan ./
 ENV MASSCAN_ARGS --help
-CMD /opt/app/masscan $MASSCAN_ARGS
+ENV GTW_ADDR " "
+CMD /opt/app/masscan $MASSCAN_ARGS | grep -v "${GTW_ADDR}"
