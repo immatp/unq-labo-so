@@ -35,7 +35,8 @@ Cada uno de los scripts plantea un escenario diferente para realizar un escaneo 
 Para iniciar cualquiera de los escenarios se debe posicionar en la raíz del repositorio y ejecutar
 
 ```bash
-sh scripts/runners/NOMBRE_DEL_SCRIPT_A_EJECUTAR
+chmod u+x scripts/runners/NOMBRE_DEL_SCRIPT_A_EJECUTAR
+./scripts/runners/NOMBRE_DEL_SCRIPT_A_EJECUTAR
 ```
 
 Como STDOUT del servicio "masscan" de cada laboratorio se obtendrá el resultado del escaneo realizado por Masscan dentro de la red Docker asignada al laboratorio
